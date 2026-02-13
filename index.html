@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Blog Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+<nav class="bg-black text-white sticky top-0 z-20">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="text-xl font-bold">FASHION BLOG</div>
+    <div class="space-x-4">
+      <a href="#home" class="hover:text-gray-400">Home</a>
+      <a href="#blog" class="hover:text-gray-400">Blog</a>
+      <a href="#about" class="hover:text-gray-400">About</a>
+    </div>
+    <input id="searchInput" type="text" placeholder="Search posts..."
+           class="px-2 py-1 border rounded text-black">
+  </div>
+</nav>
+
+<section id="home" class="relative bg-white h-60 flex items-center justify-center">
+  <div class="text-center text-gray-900 px-6">
+    <h1 class="text-4xl font-bold mb-2">JANE'S BLOG</h1>
+    <p class="text-xl">Welcome to the blog of Jane's world</p>
+  </div>
+</section>
+
+<section class="relative w-full h-screen bg-cover bg-top" style="background-image: url('assets/hero-bg.jpg');">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <div class="relative z-10 container mx-auto h-full flex items-center">
+    <div class="text-white max-w-lg px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Join Our Fashion World</h1>
+      <p class="mb-6 text-lg">Stay updated with the latest trends, styles, and exclusive offers delivered to your inbox.</p>
+      <button class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold">Subscribe Now</button>
+    </div>
+  </div>
+</section>
+
+<div class="container mx-auto px-6 py-12">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+    <div class="lg:col-span-2 space-y-12">
+
+      <article class="bg-white shadow">
+        <img src="assets/post1.jpg" alt="Post 1" class="w-full">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-2">TITLE HEADING</h2>
+          <p class="text-gray-500 mb-4">Title description, May 2, 2016</p>
+          <p class="mb-4">
+            More Hats! I am crazy about hats these days. Some text about this blog entry...
+          </p>
+          <div class="flex justify-between items-center">
+            <button class="border px-4 py-2 font-semibold hover:bg-gray-100">Like</button>
+            <span class="bg-black text-white px-3 py-1 text-sm">Replies 1</span>
+          </div>
+        </div>
+      </article>
+
+      
+      <article class="bg-white shadow">
+        <img src="assets/post-2.jpg" alt="Post 2" class="w-full">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-2">BLOG ENTRY</h2>
+          <p class="text-gray-500 mb-4">April 23, 2016</p>
+          <p class="mb-4">
+            Hats! The trend this summer is hats for men!
+          </p>
+          <div class="flex justify-between items-center">
+            <button class="border px-4 py-2 font-semibold hover:bg-gray-100">Like</button>
+            <span class="bg-black text-white px-3 py-1 text-sm">Replies 2</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <aside class="space-y-10">
+
+      <div class="bg-white shadow">
+        <img src="assets/post2.jpg" alt="Jane" class="w-full">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">My Name</h3>
+          <p>
+            Just me, myself and I, exploring the universe of fashion.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow">
+        <div class="bg-black text-white px-6 py-3 font-bold">
+          Popular Posts
+        </div>
+        <div class="divide-y">
+          <div class="flex items-center p-4 hover:bg-gray-100 cursor-pointer">
+            <img src="assets/user1.jpg" class="w-12 h-12 object-cover mr-4">
+            <span>Denim</span>
+          </div>
+          <div class="flex items-center p-4 hover:bg-gray-100 cursor-pointer">
+            <img src="assets/user2.avif" class="w-12 h-12 object-cover mr-4">
+            <span>Sweaters</span>
+          </div>
+          <div class="flex items-center p-4 hover:bg-gray-100 cursor-pointer">
+            <img src="assets/user3.avif" class="w-12 h-12 object-cover mr-4">
+            <span>Workshop</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white shadow">
+        <div class="bg-black text-white px-6 py-3 font-bold">
+          Tags
+        </div>
+        <div class="p-6 flex flex-wrap gap-2">
+          <span class="bg-gray-200 px-3 py-1 text-sm">Fashion</span>
+          <span class="bg-gray-200 px-3 py-1 text-sm">New York</span>
+          <span class="bg-gray-200 px-3 py-1 text-sm">Hats</span>
+          <span class="bg-gray-200 px-3 py-1 text-sm">Ideas</span>
+          <span class="bg-gray-200 px-3 py-1 text-sm">Deals</span>
+        </div>
+      </div>
+
+      <div class="bg-white shadow">
+        <div class="bg-black text-white px-6 py-3 font-bold">
+          Subscribe
+        </div>
+        <div class="p-6">
+          <p class="mb-4">Enter your e-mail below and get notified on the latest blog posts.</p>
+          <input type="email" placeholder="Enter e-mail"
+                 class="w-full border px-4 py-2 mb-4">
+          <button class="w-full bg-red-500 text-white py-2 hover:bg-red-600">
+            Subscribe
+          </button>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+</div>
+<article class="bg-white shadow">
+        <img src="assets/post3.jpg" alt="Post 1" class="w-full">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-2">TITLE HEADING</h2>
+          <p class="text-gray-500 mb-4">Title description, May 2, 2016</p>
+          <p class="mb-4">
+           Dont miss! The runway in New York City this weekend is gonna be legendary!
+
+Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, 
+convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, 
+ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt 
+sedtellus ut rutrum. Sed vitae justo condimentum,
+ porta lectus vitae, ultricies congue gravida diam non fringilla
+
+          </p>
+          <div class="flex justify-between items-center">
+            <button class="border px-4 py-2 font-semibold hover:bg-gray-100">Like</button>
+            <span class="bg-black text-white px-3 py-1 text-sm">Replies 1</span>
+          </div>
+        </div>
+      </article>
+
+<button id="backToTop"
+        class="hidden fixed bottom-6 right-6 px-4 py-2 bg-black text-white rounded">Top</button>
+\
+<footer class="bg-black text-white py-8 text-center">
+  <a href="#home" class="bg-gray-700 px-4 py-2 inline-block mb-4 hover:bg-gray-600">
+    To the top
+  </a>
+  <p>Powered by Jane's Fashion Blog</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
