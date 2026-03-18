@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jane's Fashion Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="top-bar">
+    <nav class="top-bar">
         <div class="social-icons">
-            <img src="AssetsFacebook Icon.jpg" class="icon" alt="Facebook">
-            <img src="Assets/instagram icon.jpg" class="icon" alt="Instagram">
-            <img src="Assets/snapchart icon.jpg" class="icon" alt="Snapchat">
-            <img src="Assets/message icon.jpg" class="icon" alt="Messages">
-            <img src="Assets/twitter icon.jpg" class="icon" alt="Twitter">
-            <img src="Assets/LinkedIn icon.jpg" class="icon" alt="LinkedIn">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <div class="score-display">
             Engagement Score: <span id="scoreValue">0</span>
         </div>
         <div class="search-container">
-         <input type="text" id="searchBar" placeholder="Search posts...">
-         <img src="Assets/Search icon.jpg" alt="Search" class="search-icon">
-         </div>
-
-
+            <input type="text" id="searchBar" placeholder="Search posts...">
+            <i class="fa fa-search search-icon"></i>
+        </div>
     </nav>
 
     <header class="header">
@@ -41,24 +40,24 @@
     </section>
 
     <div class="container">
-        
+
         <main class="posts">
 
             <article class="post" data-tags="Hats Fashion">
                 <h2>TITLE HEADING</h2>
                 <p class="meta">Title description, <span>May 2, 2016</span></p>
-                <img src="assets/post1.jpg" alt="Fashion photo">
+                <img src="Assets/post1.jpg" alt="Fashion photo">
                 <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                 <div class="post-footer">
                     <button class="like-btn">
-                     <img src="Assets/thumbs-up icon.jpg" alt="Like" class="like-icon">
-                       Like
-                     </button>
+                        <i class="fa fa-thumbs-up like-icon"></i>
+                        <span class="like-label">Like</span>
+                    </button>
                     <span class="replies">Replies <span class="count">1</span></span>
                 </div>
                 <div class="comment">
-                    <img src="Assets/avatar_smoke.jpg" alt="George">
+                    <div class="comment-avatar-placeholder">G</div>
                     <div class="comment-content">
                         <h4>George <span>May 3, 2015, 6:32 PM</span></h4>
                         <p>Great blog post! Following</p>
@@ -74,8 +73,8 @@
                 <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                 <div class="post-footer">
                     <button class="like-btn">
-                      <img src="Assets/thumbs-up icon.jpg" alt="Like" class="like-icon">
-                        Like
+                        <i class="fa fa-thumbs-up like-icon"></i>
+                        <span class="like-label">Like</span>
                     </button>
                     <span class="replies">Replies <span class="count">2</span></span>
                 </div>
@@ -89,8 +88,8 @@
                 <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                 <div class="post-footer">
                     <button class="like-btn">
-                     <img src="Assets/thumbs-up icon.jpg" alt="Like" class="like-icon">
-                         Like
+                        <i class="fa fa-thumbs-up like-icon"></i>
+                        <span class="like-label">Like</span>
                     </button>
                     <span class="replies">Replies <span class="count">3</span></span>
                 </div>
@@ -189,12 +188,12 @@
                 <h3>Follow Me</h3>
                 <div class="widget-content">
                     <div class="social-follow">
-                        <img src="Assets/facebook2 icon.jpg" class="icon" alt="Facebook">
-                        <img src="Assets/instagram2 icon.jpg" class="icon" alt="Instagram">
-                        <img src="Assets/snapchart2 icon.jpg" class="icon" alt="Snapchat">
-                        <img src="Assets/pinterest 2 icon.jpg" class="icon" alt="Pinterest">
-                        <img src="Assets/twitter2 icon.jpg" class="icon" alt="Twitter">
-                        <img src="Assets/LinkedIn2 Icon.jpg" class="icon" alt="LinkedIn">
+                        <a href="#" class="follow-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="follow-icon instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="follow-icon snapchat"><i class="fab fa-snapchat"></i></a>
+                        <a href="#" class="follow-icon pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="follow-icon twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="follow-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -213,7 +212,7 @@
     </div>
 
     <footer class="footer">
-        <button id="backToTop" class="hidden">↑ To the top</button>
+        <button id="backToTop" class="hidden"><i class="fa fa-arrow-up"></i> To the top</button>
         <p>Powered by <a href="https://www.w3schools.com/w3css/" target="_blank">w3.css</a></p>
     </footer>
 
